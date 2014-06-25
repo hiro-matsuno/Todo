@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Todoリスト</title>
+<script src='jquery-2.1.1.min.js'></script>
+<script src="todoList.js"></script>
+</head>
+<body>
+	<label>Todoデータ一覧</label>
+	<table border="1">
+		<tr>
+			<th>完了</th>
+			<th>タイトル</th>
+			<th>内容</th>
+			<th>開始時間</th>
+			<th>終了時間</th>
+			<th>終日作業</th>
+		</tr>
+		<tbody class='todoArray'>
+			<tr>
+				<td><input type="hidden" class="todo_id" value="" /><input class="kanryoFlag" type="checkbox" onclick="kanryouFlagChange()" /></td>
+				<td><label class="todo_title"></label></td>
+				<td><label class="todo_content"></label></td>
+				<td><label class="startTime"></label></td>
+				<td><label class="endTime"></label></td>
+				<td><input type="checkbox" class="endDate" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<div id='tail'>
+		<a href="Todo.html">Todo入力へ</a>
+	</div>
+</body>
+</html>

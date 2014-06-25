@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Todo入力</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="Todo.js"></script>
+</head>
+<body>
+	<div id="head">
+		<h1>Todo入力</h1>
+	</div>
+	<div id="content">
+		<label>本日日付</label><br />
+		<label id="now_date"></label>
+		<input type='hidden' id='inputYMDHM' value='' />
+		<br />
+		<label>todoタイトル</label><br />
+		<input id="todo_title" type="text" value="" /><br />
+		<label>内容</label><br />
+		<textarea id="todo_content" value="">
+		</textarea>
+		<br />
+		<label>開始時間</label><br />
+		<input type="time" id="start_time" value="" /><br />
+		<label>終了時間</label><br />
+		<input type="time" id="end_time" value="" /><br />
+		<label>終日</label>
+		<input type="checkbox" id="end_date" value="" /><br />
+	</div>
+	<div id='button_content'>
+		<input type='button' id='clearBtn' value='クリア' onclick='data_clear()' />
+		<input type='button' id='inputBtn' value='登録' onclick='input_data()' />
+	</div>
+	<div>
+		<a href='todoList.html'>Todoリストへ</a><br />
+		<a href='todo.zip'>全ソース</a><br />
+		<label>このアプリはMITライセンスで公開しております。改変時はhiro.matsuno at gmail.comにご連絡下さい。atは書き換えてくださいね。</label>
+	</div>
+	
+</body>
+</html>
