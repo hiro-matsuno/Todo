@@ -24,6 +24,7 @@ function nowDateThis(){
 	return nowYMD;
 }
 
+//現在の日付時間の取得
 function nowDateHour(){
 //	日付取得
 	nowDate = new Date();
